@@ -1,0 +1,32 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+}
+header{
+    height: 10vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+nav ul {
+    display: flex;
+    margin-right: 30px;
+    gap: 30px;
+    
+}
+nav ul li{
+  
+  width: 100px;
+  padding: 5px;
+}
+footer{
+    height: 10vh;
+    background-color: aqua;
+}
+section{
+    margin-top: -15px;
+    height: 80vh;
+    background-color: blueviolet;
+}
