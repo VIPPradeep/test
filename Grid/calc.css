@@ -3,10 +3,105 @@
     padding: 0px;
     box-sizing: border-box;
 }
-.parent{
-    border: 2px solid black;
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 100vh;
+    background-color: rgb(79, 74, 148);
+    
+}
+.parent{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 100px;
+  
+}
+#valuebox{
+    height: 70px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgb(8, 16, 101);
+    color: white;
+    text-align: right;
+    font-size: 30px;
+}
+.calc{
+    border: 2px solid black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,80px);
+    padding: 20px;
+    gap: 10px;
+    height:fit-content;
+    width: fit-content;
+    background-color: rgba(80, 79, 90, 0.495);
+    
+    
+}
+.num{
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 25px;
+    
+    
+}
+.reset , .equal {
+    width: 150px;
+    font-size: 19px;
+    
+}
+input{
+    width: 70px;
+    height: 50px;
+}
+h3 , .del ,.reset , .equal{
+   color: white;
+}
+.reset , .del{
+    background-color:rgba(44, 39, 114, 0.879);
+}
+.equal{
+    background-color: rgb(252, 68, 35);
+}
+.num4 , .num7 , .num10{
+    grid-column-start: 1;
+}
+.del{
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+.add{
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+.sub{
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+.mul{
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+.reset{
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-column: span 2/span 4;
+}
+.equal{
+    grid-column-start: 3;
+    grid-column: span 2/span 4;
+}
+@media screen and (max-width: 600px){
+    body{
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+    }
+    h3{
+        color: black;
+    }
 }
