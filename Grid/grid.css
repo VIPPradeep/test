@@ -14,6 +14,9 @@
     text-align: center;
     
 }
+.img1{
+    grid-column: span 2/span 4;
+}
 .Section{
 
     display: grid;
