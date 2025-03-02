@@ -87,11 +87,13 @@ body{
 
 .horizontal::after{
     content: "|";
-    font-size: 20px;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.425);
 }
 .list1::after{
     content: "|";
-    font-size: 20px;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.425);
 }
 .head2{
     display: flex;
@@ -165,14 +167,16 @@ section{
      color: purple;
      gap: 20px;
      border: 1px solid purple;
-     width: 1300px;
-     height: 300px;
+     width: 1350px;
+     height: fit-content;
+     
      
     
 }
 .dropdown:hover .product-list{
     display:flex;
-    justify-content: space-evenly;
+    justify-content: start;
+    /* align-content: start; */
     
     
 }
@@ -180,3 +184,10 @@ section{
     display: block;
    
 }
+.product-list .content-list a{
+    text-decoration: none;
+    color: black;
+}
+.bg2{
+    background-color: rgba(219, 219, 219, 0.505);
+}   
