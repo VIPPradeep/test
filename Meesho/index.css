@@ -9,6 +9,12 @@ body{
     
     
 }
+.head{
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    background-color: white;
+}
 
 .head1 {
     display: flex;
@@ -157,6 +163,9 @@ section{
     
     height: 500vh;
     background-color: white;
+    position: relative;
+    z-index: 1;
+    margin-top: 40px;
 }
 .product-list{
     display: none;
@@ -169,6 +178,7 @@ section{
      border: 1px solid purple;
      width: 1350px;
      height: fit-content;
+     z-index:1000;
      
      
     
@@ -191,3 +201,95 @@ section{
 .bg2{
     background-color: rgba(219, 219, 219, 0.505);
 }   
+.Parentbanner{
+    display: flex;
+    flex-direction: row;
+    width: 1300px;
+    height: 12%;
+    position: relative;
+    left: 100px;
+    top: 20px;
+ 
+    
+}
+.banners{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    
+}
+.banner1
+{
+    width: 50%;
+   height: 100%;
+    
+    padding: 30px;
+    background-color: rgba(192, 190, 190, 0.114);
+
+}
+ h1{
+    font-size: 60px;
+}
+.bannerchild1 ul{
+    display: flex;
+    width: fit-content;
+    height: 50px;
+    gap: 30px;
+    justify-content: space-between;
+    list-style-type: none;
+ 
+    /* align-items: center; */
+}
+.bannerchild1 ul li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.bannerchild1 ul .parentgrandchild::after{
+    content: "|";
+    left: 10px;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.523);
+}
+.bannerchild2{
+    background-color: rgb(172, 36, 158);
+    color: white;
+    width: 330px;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.banner2 .bannerchild1 img{
+    width: 647px;
+    height:440px;
+
+}
+.banner2
+{
+    width: 50%;
+   height: 100%;
+
+
+}
+.section-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 100px;
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #b583b5; /* Light purple line */
+    margin: 0 100px; /* Adjust spacing */
+}
