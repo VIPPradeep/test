@@ -1,89 +1,47 @@
-.banner3 img{
-    height: 150px;
-    width: 150px;
-    border: 2px solid rgba(0, 0, 0, 0.297);
-    border-radius: 25px;
-}
-.Parentbanner3{
-    background-image: url(Assets/bg.jpg);
-    width: 1300px;
-    height: 600px;
-    position: relative;
-    left: 100px;
-    top: 100px;
-    display: flex;
-    
-}
-
-
-.Parentbanner3 .childbanner3{
+.head1 .nav .dropdown1{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    position: absolute;
+    top: 90px;
+    left: 620px;
+    width: 220px;
+    height: 200px;
+    justify-content: space-between;
     background-color: white;
-    border-radius: 25px;
-    height: 400px;
-    width: 200px;
+    padding:15px;
+    justify-items: center;
+    align-items: center;
+}
+.horizontal:hover .dropdown1{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+    z-index: 1000;
+    
 }
-.Parentbanner3 .content-banner{
-    width: 70%;
-    display: flex;
-    gap: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Parentbanner3 .content-banner span{
-    background-color: rgba(247, 211, 8, 0.9);
-    display: block;
-    width: 180px;
+.head1 .nav .dropdown1 img{
+    width: 30px;
     height: 30px;
-    font-size: 20px;
-    border-radius: 25px;
-    color: white;
+}
+.head1 .nav .dropdown1 div{
     text-align: center;
-    position: relative;
-    top: 18px;
-    left: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
-.Parentbanner3 .headname{
-    width: 30%;
+.head1 .nav .dropdown1 li{
     display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    height: 100%;
-    position: relative;
-    top: 230px;
-    left: 40px;
-}
-
-.Parentbanner3 .headname h2{
-font-size: 80px;
-color: white;
-
--webkit-text-stroke: 1px rgba(255, 217, 0, 0.66); 
-
-}
-.Parentbanner3 .headname button{
-    width: 180px;
-    height: 50px;
-    outline: none;
-    background-color: ;
-    border-radius: 25px;
-   
-}
-.Parentbanner3 .headname button a{
+    background-color: black;
+    gap: 20px;
     color: white;
-    
-    font-size: 30px;
-    font-weight: bold;
-    -webkit-text-stroke: 1px rgba(255, 217, 0, 0.66); 
+    width: 180px;
+    height:48px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 }
-.Parentbanner4{
-    margin-top: 80px;
+.head1 .nav .dropdown1 .apple{
+    background-color: white;
+}
+.dropdown1 h4{
+    color: black;
 }
